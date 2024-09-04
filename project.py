@@ -50,12 +50,7 @@ class PriceMachine:
                             })
         # Сортировка данных по цене за кг
         self.data.sort(key=lambda x: x['price_per_kg'])
-        # self.data= self.find_text(self.data)
-        # Присвоение номера каждому элементу после сортировки
-        # self.name_length = len(self.data)
-        # for idx, item in enumerate(self.data):
-        #     item['Номер'] = idx + 1  # Присваиваем номер начиная с 1
-        #
+
     def _search_product_price_weight(self, headers):
         '''
             Возвращает индексы столбцов для товара, цены и веса.
